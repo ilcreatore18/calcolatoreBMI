@@ -1,0 +1,144 @@
+/* Stile comune */
+body {
+    background-color: #F1F3F5;
+    color: #1F2328;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Card principale */
+.card {
+    background-color: #ffffff;
+    width: 360px;
+    max-width: 100%;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Form e Input */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: -4px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Pulsante */
+button {
+    background-color: #1F2328;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #33383f;
+}
+
+/* Contenuto Risultato */
+.bmi-valore {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 16px 0;
+}
+
+.fascia-nome {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.dati-utente {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+.link-ricalcola {
+    display: inline-block;
+    margin-top: 16px;
+    color: #1F2328;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Le 4 Classi delle Card (Bordo 3px solido, il testo della fascia usa lo stesso colore del bordo) */
+.sottopeso {
+    background-color: #E3EEF9;
+    border: 3px solid #2F6F92;
+    color: #2F6F92;
+}
+
+.sottopeso .fascia-nome,
+.sottopeso .bmi-valore {
+    color: #2F6F92;
+}
+
+.normopeso {
+    background-color: #E3F4E6;
+    border: 3px solid #256D34;
+    color: #256D34;
+}
+
+.normopeso .fascia-nome,
+.normopeso .bmi-valore {
+    color: #256D34;
+}
+
+.sovrappeso {
+    background-color: #FCE8D7;
+    border: 3px solid #9A4F06;
+    color: #9A4F06;
+}
+
+.sovrappeso .fascia-nome,
+.sovrappeso .bmi-valore {
+    color: #9A4F06;
+}
+
+.obesita {
+    background-color: #F86262;
+    border: 3px solid #832020;
+    color: #832020;
+}
+
+.obesita .fascia-nome,
+.obesita .bmi-valore {
+    color: #832020;
+}
